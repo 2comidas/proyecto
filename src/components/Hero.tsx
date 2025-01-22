@@ -6,6 +6,8 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import Logo2C from '../assets/doscomidas-logo-blanco.svg'
 import { SocialMediaURL } from '../lib';
 
+import btc_pdf_example from '../assets/btc_pdf_example.pdf'
+
 export const Hero: React.FC = () => {
 
     const socialMediaRedirect = (url: string): void => {
@@ -82,6 +84,17 @@ export const Hero: React.FC = () => {
 
                 </ButtonGroup>
             </Box>
+
+            <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
+                <object
+                    data={btc_pdf_example}
+                    type="application/pdf"
+                    width="100%"
+                    height="100%"
+                >
+                    objecto pdf
+                </object>
+            </div>
 
             <style>{`
                 .container {
