@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
                 color="primary.contrastText"
                 align="center"
                 component={'h2'}>
-                Más que comida, un movimiento social.
+                Más que comida, un movimiento social. 
                 <br />Estamos construyendo más que una red de restaurantes, estamos tejiendo el futuro de nuestra nación.
                 <br />Cada comida compartida es un paso hacia una Argentina más fuerte y unida.
             </Typography>
