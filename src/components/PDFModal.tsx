@@ -2,7 +2,7 @@ import React from "react";
 
 import { Box, Dialog, DialogContent, Button } from "@mui/material";
 
-import btc_pdf_example from '../assets/btc_pdf_example.pdf'
+import anexoFinanciamiento from '../assets/Anexo-financiamiento.pdf'
 
 interface PDFModalProps {
     open: boolean;
@@ -34,7 +34,7 @@ export const PDFModal: React.FC<PDFModalProps> = ({ open, handleOpen }) => {
                 <DialogContent>
                     <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
                         <object
-                            data={btc_pdf_example}
+                            data={anexoFinanciamiento}
                             type="application/pdf"
                             width="100%"
                             height="100%"
