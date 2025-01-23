@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Box, ButtonGroup, Divider, IconButton, SvgIcon, Typography } from "@mui/material";
+import { Box, ButtonGroup, Divider, IconButton, SvgIcon, Typography, Button } from "@mui/material";
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 import Logo2C from '../assets/doscomidas-logo-blanco.svg'
+import { PDFModal } from '../components';
 import { SocialMediaURL } from '../lib';
 
-import btc_pdf_example from '../assets/btc_pdf_example.pdf'
 
 export const Hero: React.FC = () => {
+    const [openModal, setOpenModal] = useState<boolean>(false);
 
     const socialMediaRedirect = (url: string): void => {
         window.open(url, '_blank');
@@ -48,10 +49,23 @@ export const Hero: React.FC = () => {
                 color="primary.contrastText"
                 align="center"
                 component={'h2'}>
-                Más que comida, un movimiento social. 
+                Más que comida, un movimiento social.
                 <br />Estamos construyendo más que una red de restaurantes, estamos tejiendo el futuro de nuestra nación.
                 <br />Cada comida compartida es un paso hacia una Argentina más fuerte y unida.
             </Typography>
+
+            <Box
+                justifyContent={'center'}
+                display={'flex'}
+                marginTop={'15px'}
+            >
+                <Button
+                    variant="contained"
+                    color="secondary"
+                    onClick={() => setOpenModal(true)}>
+                    Ver pdf del proyecto
+                </Button>
+            </Box>
 
             <Typography
                 margin='20px 0px 0px 0px'
@@ -85,16 +99,7 @@ export const Hero: React.FC = () => {
                 </ButtonGroup>
             </Box>
 
-            <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
-                <object
-                    data={btc_pdf_example}
-                    type="application/pdf"
-                    width="100%"
-                    height="100%"
-                >
-                    objecto pdf
-                </object>
-            </div>
+            <PDFModal open={openModal} handleOpen={setOpenModal} />
 
             <style>{`
                 .container {
