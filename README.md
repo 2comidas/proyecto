@@ -1,5 +1,12 @@
 # React + TypeScript + Vite
 
+## Descargar y levantar el proycto en local
+1. Dentro de alguna carpeta local en la computadora, ejemplo "carpeta_local", abrir una shell o terminal e introducir la siguiente linea: `git clone https://github.com/2comidas/proyecto.git`
+2. Una vez que se decarga el proyecto (lo que se descarga es una carpeta llamada "proyecto"), abrirlo con el ide de preferencia.
+3. En la ubicacion `carpeta_local/proyecto/` (es decir, dentro de la carpeta proyecto), ingresar los siguientes comandos:
+   - `npm install` Esto hace que se instalen todas las dependencias
+   - `npm run dev` Esto permite que arranque el proyecto y con ello ya se lo podría visualizar en el navegador en la url **http://localhost:5173/proyecto/**
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
