@@ -50,9 +50,9 @@ export const Hero: React.FC = () => {
                 align="center"
                 component={'h2'}>
                 Más que comida, La liberacion Humana.
-                <br />Estamos creando un nuevo paradigma donde el hambre deja de existir. Cada comida transforma,
-                cada plato abre caminos. Damos vida, fuerza y oportunidades a cada ser humano, impulsando una
-                realidad en la que todos crecen y viven plenamente.
+                <br />Estamos creando un nuevo paradigma donde el hambre deja de existir. 
+                <br />Cada comida transforma, cada plato abre caminos. Damos vida, fuerza y oportunidades a cada ser humano,
+                <br />impulsando una realidad en la que todos crecen y viven plenamente.
             </Typography>
 
             <Box
